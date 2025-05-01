@@ -165,7 +165,7 @@ services:
         healthcheck:
             test: nc -z kafka-2 9092
             interval: 15s
-            retries: 3
+            retries: 4
         depends_on:
             controller-1:
                 condition: service_healthy
